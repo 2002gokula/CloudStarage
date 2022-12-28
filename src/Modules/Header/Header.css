@@ -1,0 +1,101 @@
+.Header {
+  height: 69px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.Logo > img {
+  width: 35%;
+  object-fit: contain;
+}
+.HeaderOptions {
+  display: flex;
+  align-items: center;
+  width: 7%;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.HeaderOption {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: blue;
+  gap: 10px;
+  padding: 6px 25px 6px 10px;
+  border-radius: 9px;
+  margin-left: 10px;
+}
+.HeaderOption > img {
+  object-fit: contain;
+  width: 34%;
+}
+.HeaderOptioninactive {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  padding: 6px 25px 6px 10px;
+  border-radius: 9px;
+  margin-left: 10px;
+}
+.HeaderOptioninactive:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.SearchSection {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  gap: 15px;
+}
+.SearchSection > input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+}
+.ProfileSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ProfileSection > img {
+  width: 16%;
+  margin-left: 10px;
+  object-fit: contain;
+}
+.HeaderOptionFlex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 976px) {
+  .SearchSection {
+    display: none;
+  }
+  .ThreeDotBtn {
+    display: flex;
+  }
+}
+@media (max-width: 711px) {
+  .ProfileSection {
+    display: none;
+  }
+}
+@media (max-width: 502px) {
+  .HeaderOptionFlex {
+    display: none;
+  }
+}
+.ThreeDotBtn {
+  width: 90%;
+  object-fit: contain;
+  display: none;
+}

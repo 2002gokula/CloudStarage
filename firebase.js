@@ -1,5 +1,10 @@
-import firebase from "firebase"
-
+import * as firebase from "firebase/app";
+import { initializeApp } from "firebase/app";
+// Add the Firebase products that you want to use
+// import "firebase/auth";
+import "firebase/auth";
+import "firebase/firestore";
+import "firebase/storage"
 const firebaseConfig = {
   apiKey: "AIzaSyCX36FxtFyJOaWR0CPJfowkPHpGdhcB220",
   authDomain: "fir-f309f.firebaseapp.com",
@@ -10,11 +15,10 @@ const firebaseConfig = {
   measurementId: "G-1L3W2DS2YX",
 }
 
-const firebaseApp = firebase.initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig);
 
-const auth = firebase.auth()
+const auth= firebase.auth()
 const provider = new firebase.auth.GoogleAuthProvider()
 const storage = firebase.storage()
-const db = firebaseApp.firestore()
-
+const db = app.firestore()
 export { auth, provider, storage, db }

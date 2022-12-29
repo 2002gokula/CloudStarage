@@ -2,9 +2,10 @@ import React, { useState } from "react"
 // import '../../styles/NewFile.css';
 
 // import AddIcon from "@material-ui/icons/Add"
-import AddIcon from "@mui/icons-material"
+// import AddIcon from "@mui/icons-material"
 
-import firebase from "firebase"
+import firebase from "firebase/compat/app";
+// import "firebase/compat/storage";
 import { storage, db } from "../../../../firebase"
 
 import { makeStyles } from "@material-ui/core/styles"
@@ -92,7 +93,7 @@ const NewFile = () => {
   return (
     <div className="newFile">
       <div className="newFile__container" onClick={handleOpen}>
-        <AddIcon className="addicon" fontSize="large" />
+        {/* <AddIcon className="addicon" fontSize="large" /> */}
         <p>New</p>
       </div>
 

@@ -1,7 +1,7 @@
 import React from "react"
 import NewFile from "./component/NewFile"
 import Recentfiles from "./component/Recentfiles"
-import Upload from "./component/Upload"
+// import Upload from "./component/Upload"
 import "./Dashboard.css"
 const index = () => {
   return (

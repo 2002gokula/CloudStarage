@@ -1,3 +1,140 @@
 * {
   margin: 0;
+  padding: 0;
+  color: black;
+}
+.fileItem {
+  width: 100%;
+}
+
+.fileItem > a {
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(85, 78, 78);
+}
+
+.fileItem > a > div {
+  display: flex;
+  align-items: center;
+}
+
+.fileItem > a > div > * {
+  margin: 10px;
+}
+
+.fileItem--left {
+  flex: 1;
+}
+.newFile {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  padding-left: 20px;
+}
+
+.newFile__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* TRouBLe */
+  padding: 6px 32px 6px 8px;
+  border-radius: 50px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  cursor: pointer;
+}
+
+.newFile__container > p {
+  margin-left: 14px;
+}
+.fileView {
+  /* width: 100%; */
+  background-color: white;
+  /* border-radius: 5px; */
+}
+
+.fileView__row {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.fileView__titles {
+  display: flex;
+  margin-bottom: 5px;
+  color: rgb(85, 78, 78);
+}
+
+.fileView__titles > div > * {
+  margin: 5px;
+}
+
+.fileView__titles--left {
+  flex: 0.6;
+  margin-left: 20px;
+}
+
+.fileView__titles--middle {
+  display: flex;
+  flex: 0.3;
+}
+.fileView__title--right {
+  flex: 0.2;
+}
+.fileCard {
+  height: 190px;
+  width: 240px;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  margin: 5px;
+}
+
+.fileCard--top {
+  height: 70%;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sp {
+  color: rgb(235, 38, 31);
+}
+
+.fileCard--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+.fileCard--bottom > p {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fileItem {
+  background-color: white;
+  height: 100%;
+}
+.fileItem > a > div > img {
+  width: 30%;
+  object-fit: contain;
+}
+.fileItem > a {
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(85, 78, 78);
+}
+.FileLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FileInformation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }

@@ -34,7 +34,7 @@ const data = [
     ItemFile: "13Files",
   },
 ]
-const Recentfiles = () => {
+const Recentfiles = ({name}) => {
   const splideOptions = {
     perPage: 4,
     perMove: 1,
@@ -63,7 +63,7 @@ const Recentfiles = () => {
               </div>
               <h4>{value.FileName}</h4>
               <div className="resentFileName">
-                <p>{value.fileStorage}</p>
+                <p>{name}</p>
                 <p>{value.ItemFile}</p>
               </div>
             </div>

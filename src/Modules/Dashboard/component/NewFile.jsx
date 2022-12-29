@@ -4,9 +4,9 @@ import React, { useState } from "react"
 // import AddIcon from "@material-ui/icons/Add"
 // import AddIcon from "@mui/icons-material"
 
-import firebase from "firebase/compat/app";
+import  firebase from "firebase";
 // import "firebase/compat/storage";
-import { storage, db } from "../../../../firebase"
+import { storage, db } from "../../../firebase"
 
 import { makeStyles } from "@material-ui/core/styles"
 import Modal from "@material-ui/core/Modal"
